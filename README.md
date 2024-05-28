@@ -24,5 +24,5 @@ $env:AWS_SECRET_ACCESS_KEY="REPLACE_WITH_YOUR_AWS_SECRET_ACCESS_KEY";
 You can then simply run `source secrets.sh` or `./secrets.sh` to export all your environmnet variables at once.
 
 
-launch `mlflow run  https://github.com/2nzi/MLflowProject-Train.git -A gpus=all` to tri the github.
+launch `mlflow run  https://github.com/2nzi/MLflowProject-Train.git -A gpus=all` to try the github.
 
