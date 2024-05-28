@@ -2,12 +2,10 @@
 
 👋 **Make sure that you exported your personal environment variables on your local terminal**. Especially, you need:
 
-* `MLFLOW_EXPERIMENT_ID`
 * `MLFLOW_TRACKING_URI`
 * `AWS_ACCESS_KEY_ID`
 * `AWS_SECRET_ACCESS_KEY`
-* `BACKEND_STORE_URI`
-* `ARTIFACT_ROOT`
+
 
 Our advice is to create a `secrets.sh` file containing:
 
