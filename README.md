@@ -7,16 +7,22 @@
 * `AWS_SECRET_ACCESS_KEY`
 
 
-Our advice is to create a `secrets.sh` file containing:
+Our advice is to create a `secrets.sh` or `secrets.ps1` file containing:
 
 ```bash
-export MLFLOW_EXPERIMENT_ID="REPLACE_WITH_YOUR_MLFLOW_EXPERIMENT_ID"
 export MLFLOW_TRACKING_URI="REPLACE_WITH_YOUR_MLFLOW_TRACKING_URI";
 export AWS_ACCESS_KEY_ID="REPLACE_WITH_YOUR_AWS_ACCESS_KEY_ID";
 export AWS_SECRET_ACCESS_KEY="REPLACE_WITH_YOUR_AWS_SECRET_ACCESS_KEY";
-export BACKEND_STORE_URI="REPLACE_WITH_YOUR_BACKEND_STORE_URI";
-export ARTIFACT_ROOT="REPLACE_WITH_YOUR_ARTIFACT_ROOT";
 ```
 
-You can then simply run `source secrets.sh` to export all your environmnet variables at once.
+```ps1
+$env:MLFLOW_TRACKING_URI="REPLACE_WITH_YOUR_MLFLOW_TRACKING_URI";
+$env:AWS_ACCESS_KEY_ID="REPLACE_WITH_YOUR_AWS_ACCESS_KEY_ID";
+$env:AWS_SECRET_ACCESS_KEY="REPLACE_WITH_YOUR_AWS_SECRET_ACCESS_KEY";
+```
+
+You can then simply run `source secrets.sh` OR `./secrets.sh`to export all your environmnet variables at once.
+
+
+launch `mlflow run  https://github.com/2nzi/MLflowProject-Train.git -A gpus=all` to tri the github.
 
